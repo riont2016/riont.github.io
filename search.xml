@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[快速搭建博客]]></title>
+    <url>%2F2018%2F01%2F27%2Fjd%2F</url>
+    <content type="text"><![CDATA[搭建博客，现有的开源程序很多，各种语言的都有，网络上经常遇到有： ASP的程序博客有Z-BLOGPHP的程序博客有WORDPRESSPYTHON的程序博客有WORDPRESSHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。这几个博客源码都有尝试过，各有各的好处，要说上手最快的应该是Hexo,这个博客框架安装起来，再配置一些外置的插件，网站就可以运行起来了，而且还可以使用github的空间，不像其它的源码部署麻烦，要自己去买服务器和安装，对于门外汉来说，确实挺麻烦的。]]></content>
+      <tags>
+        <tag>node.js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[测试发布的文章]]></title>
     <url>%2F2018%2F01%2F27%2FnewBlog%2F</url>
     <content type="text"><![CDATA[这个博客是在hexo框架下面的开发的，因此开发一个博客显得就简单多了，我们只要配置一下网站的相关信息就可以了！]]></content>
