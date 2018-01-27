@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-27T10:37:18.000Z</updated>
+  <updated>2018-01-27T10:42:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/01/27/jd/"/>
     <id>http://yoursite.com/2018/01/27/jd/</id>
     <published>2018-01-27T10:16:20.000Z</published>
-    <updated>2018-01-27T10:37:18.000Z</updated>
+    <updated>2018-01-27T10:42:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>搭建博客，现有的开源程序很多，各种语言的都有，网络上经常遇到有：</p><h3 id="ASP的程序博客有Z-BLOG"><a href="#ASP的程序博客有Z-BLOG" class="headerlink" title="ASP的程序博客有Z-BLOG"></a>ASP的程序博客有Z-BLOG</h3><h3 id="PHP的程序博客有WORDPRESS"><a href="#PHP的程序博客有WORDPRESS" class="headerlink" title="PHP的程序博客有WORDPRESS"></a>PHP的程序博客有WORDPRESS</h3><h3 id="PYTHON的程序博客有WORDPRESS"><a href="#PYTHON的程序博客有WORDPRESS" class="headerlink" title="PYTHON的程序博客有WORDPRESS"></a>PYTHON的程序博客有WORDPRESS</h3><h3 id="Hexo-是一个快速、简洁且高效的博客框架。Hexo-使用-Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。"><a href="#Hexo-是一个快速、简洁且高效的博客框架。Hexo-使用-Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。" class="headerlink" title="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。"></a>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</h3><p>这几个博客源码都有尝试过，各有各的好处，要说上手最快的应该是Hexo,这个博客框架安装起来，再配置一些外置的插件，网站就可以运行起来了，而且还可以使用github的空间，不像其它的源码部署麻烦，要自己去买服务器和安装，对于门外汉来说，确实挺麻烦的。</p>]]></content>
     
