@@ -5,9 +5,9 @@
   <subtitle>Riont&#39;s Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://127.0.0.1/"/>
   <updated>2018-01-27T10:42:47.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://127.0.0.1/</id>
   
   <author>
     <name>riont</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>快速搭建博客</title>
-    <link href="http://yoursite.com/2018/01/27/jd/"/>
-    <id>http://yoursite.com/2018/01/27/jd/</id>
+    <link href="http://127.0.0.1/2018/01/27/jd/"/>
+    <id>http://127.0.0.1/2018/01/27/jd/</id>
     <published>2018-01-27T10:16:20.000Z</published>
     <updated>2018-01-27T10:42:47.000Z</updated>
     
@@ -36,14 +36,14 @@
     </summary>
     
     
-      <category term="node.js" scheme="http://yoursite.com/tags/node-js/"/>
+      <category term="node.js" scheme="http://127.0.0.1/tags/node-js/"/>
     
   </entry>
   
   <entry>
     <title>测试发布的文章</title>
-    <link href="http://yoursite.com/2018/01/27/newBlog/"/>
-    <id>http://yoursite.com/2018/01/27/newBlog/</id>
+    <link href="http://127.0.0.1/2018/01/27/newBlog/"/>
+    <id>http://127.0.0.1/2018/01/27/newBlog/</id>
     <published>2018-01-27T03:25:35.000Z</published>
     <updated>2018-01-27T03:32:04.000Z</updated>
     
@@ -60,7 +60,28 @@
     </summary>
     
     
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+      <category term="markdown" scheme="http://127.0.0.1/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github发布hexo站点后显示404的解决方案</title>
+    <link href="http://127.0.0.1/2018/01/01/404-error/"/>
+    <id>http://127.0.0.1/2018/01/01/404-error/</id>
+    <published>2018-01-01T06:15:44.000Z</published>
+    <updated>2018-01-28T06:54:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个博客前天晚上弄起来的，这两天又陆续了添加了一些其它的插件，站点统计，RSS订阅，必力得评论功能。添加这些插件很简单，这边就不介绍了。<br>这边遇到了一个问题就是每次更改发布推送到github后，发现站点都显示成404页面了，经排查才发现每次发布后。原来每次推送以后，根目录下面的CNAME被自动清空了。这个CNAME文件是你在github项目设置了自定义的域名后自动生成的。</p><p><img src="upload/WechatIMG482.jpeg" alt=""></p><a id="more"></a><p>而我发现我在本地用hexo d 命令发布部署命令后，输出了一段调试代码：</p><p><img src="upload/WechatIMG483.jpeg" alt=""></p><p>也就是说每次发布都会从public这个目录拷贝文件，放到.deploy_git这个隐藏目录下面，然后把.deploy_git目录下面的文件push上去，而我这个public目录下面没有CNAME这个文件，所以git repository对应的也会删除。因此我们需要在这个目录手动创建CNAME这个文件。CNAME文件内容的填写方法，只要把域名填写进去就可以了。注意不要带http://</p><p><img src="upload/WechatIMG484.jpeg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个博客前天晚上弄起来的，这两天又陆续了添加了一些其它的插件，站点统计，RSS订阅，必力得评论功能。添加这些插件很简单，这边就不介绍了。&lt;br&gt;这边遇到了一个问题就是每次更改发布推送到github后，发现站点都显示成404页面了，经排查才发现每次发布后。原来每次推送以后，根目录下面的CNAME被自动清空了。这个CNAME文件是你在github项目设置了自定义的域名后自动生成的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;upload/WechatIMG482.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="github hexo" scheme="http://127.0.0.1/tags/github-hexo/"/>
     
   </entry>
   
