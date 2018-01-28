@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Github发布hexo站点后显示404的解决方案]]></title>
+    <url>%2F2018%2F01%2F28%2F404-error%2F</url>
+    <content type="text"><![CDATA[这个博客前天晚上弄起来的，这两天又陆续了添加了一些其它的插件，站点统计，RSS订阅，必力得评论功能。添加这些插件很简单，这边就不介绍了。这边遇到了一个问题就是每次更改发布推送到github后，发现站点都显示成404页面了，经排查才发现每次发布后。原来每次推送以后，根目录下面的CNAME被自动清空了。这个CNAME文件是你在github项目设置了自定义的域名后自动生成的。 而我发现我在本地用hexo d 命令发布部署命令后，输出了一段调试代码： 也就是说每次发布都会从public这个目录拷贝文件，放到.deploy_git这个隐藏目录下面，然后把.deploy_git目录下面的文件push上去，而我这个public目录下面没有CNAME这个文件，所以git repository对应的也会删除。因此我们需要在这个目录手动创建CNAME这个文件。CNAME文件内容的填写方法，只要把域名填写进去就可以了。注意不要带http://]]></content>
+      <tags>
+        <tag>github hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[快速搭建博客]]></title>
     <url>%2F2018%2F01%2F27%2Fjd%2F</url>
     <content type="text"><![CDATA[搭建博客，现有的开源程序很多，各种语言的都有，网络上经常遇到有： ASP的程序博客有Z-BLOGPHP的程序博客有WORDPRESSPYTHON的程序博客有WORDPRESSHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。这几个博客源码都有尝试过，各有各的好处，要说上手最快的应该是Hexo,这个博客框架安装起来，再配置一些外置的插件，网站就可以运行起来了，而且还可以使用github的空间，不像其它的源码部署麻烦，要自己去买服务器和安装，对于门外汉来说，确实挺麻烦的。]]></content>
@@ -14,14 +22,6 @@
     <content type="text"><![CDATA[这个博客是在hexo框架下面的开发的，因此开发一个博客显得就简单多了，我们只要配置一下网站的相关信息就可以了！]]></content>
       <tags>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Github发布hexo站点后显示404的解决方案]]></title>
-    <url>%2F2018%2F01%2F01%2F404-error%2F</url>
-    <content type="text"><![CDATA[这个博客前天晚上弄起来的，这两天又陆续了添加了一些其它的插件，站点统计，RSS订阅，必力得评论功能。添加这些插件很简单，这边就不介绍了。这边遇到了一个问题就是每次更改发布推送到github后，发现站点都显示成404页面了，经排查才发现每次发布后。原来每次推送以后，根目录下面的CNAME被自动清空了。这个CNAME文件是你在github项目设置了自定义的域名后自动生成的。 而我发现我在本地用hexo d 命令发布部署命令后，输出了一段调试代码： 也就是说每次发布都会从public这个目录拷贝文件，放到.deploy_git这个隐藏目录下面，然后把.deploy_git目录下面的文件push上去，而我这个public目录下面没有CNAME这个文件，所以git repository对应的也会删除。因此我们需要在这个目录手动创建CNAME这个文件。CNAME文件内容的填写方法，只要把域名填写进去就可以了。注意不要带http://]]></content>
-      <tags>
-        <tag>github hexo</tag>
       </tags>
   </entry>
 </search>
