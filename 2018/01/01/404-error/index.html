@@ -127,14 +127,14 @@
 <meta property="og:site_name" content="Riont">
 <meta property="og:description" content="这个博客前天晚上弄起来的，这两天又陆续了添加了一些其它的插件，站点统计，RSS订阅，必力得评论功能。添加这些插件很简单，这边就不介绍了。这边遇到了一个问题就是每次更改发布推送到github后，发现站点都显示成404页面了，经排查才发现每次发布后。原来每次推送以后，根目录下面的CNAME被自动清空了。这个CNAME文件是你在github项目设置了自定义的域名后自动生成的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.ijucan.cn/2018/01/01/404-error/upload/WechatIMG482.jpeg">
-<meta property="og:image" content="http://www.ijucan.cn/2018/01/01/404-error/upload/WechatIMG483.jpeg">
-<meta property="og:image" content="http://www.ijucan.cn/2018/01/01/404-error/upload/WechatIMG484.jpeg">
-<meta property="og:updated_time" content="2018-01-28T06:54:54.000Z">
+<meta property="og:image" content="http://www.ijucan.cn/upload/WechatIMG482.jpeg">
+<meta property="og:image" content="http://www.ijucan.cn/upload/WechatIMG483.jpeg">
+<meta property="og:image" content="http://www.ijucan.cn/upload/WechatIMG484.jpeg">
+<meta property="og:updated_time" content="2018-01-28T07:17:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github发布hexo站点后显示404的解决方案">
 <meta name="twitter:description" content="这个博客前天晚上弄起来的，这两天又陆续了添加了一些其它的插件，站点统计，RSS订阅，必力得评论功能。添加这些插件很简单，这边就不介绍了。这边遇到了一个问题就是每次更改发布推送到github后，发现站点都显示成404页面了，经排查才发现每次发布后。原来每次推送以后，根目录下面的CNAME被自动清空了。这个CNAME文件是你在github项目设置了自定义的域名后自动生成的。">
-<meta name="twitter:image" content="http://www.ijucan.cn/2018/01/01/404-error/upload/WechatIMG482.jpeg">
+<meta name="twitter:image" content="http://www.ijucan.cn/upload/WechatIMG482.jpeg">
 
 
 
@@ -424,12 +424,12 @@
 
       
         <p>这个博客前天晚上弄起来的，这两天又陆续了添加了一些其它的插件，站点统计，RSS订阅，必力得评论功能。添加这些插件很简单，这边就不介绍了。<br>这边遇到了一个问题就是每次更改发布推送到github后，发现站点都显示成404页面了，经排查才发现每次发布后。原来每次推送以后，根目录下面的CNAME被自动清空了。这个CNAME文件是你在github项目设置了自定义的域名后自动生成的。</p>
-<p><img src="upload/WechatIMG482.jpeg" alt=""></p>
+<p><img src="/upload/WechatIMG482.jpeg" alt=""></p>
 <a id="more"></a>
 <p>而我发现我在本地用hexo d 命令发布部署命令后，输出了一段调试代码：</p>
-<p><img src="upload/WechatIMG483.jpeg" alt=""></p>
+<p><img src="/upload/WechatIMG483.jpeg" alt=""></p>
 <p>也就是说每次发布都会从public这个目录拷贝文件，放到.deploy_git这个隐藏目录下面，然后把.deploy_git目录下面的文件push上去，而我这个public目录下面没有CNAME这个文件，所以git repository对应的也会删除。因此我们需要在这个目录手动创建CNAME这个文件。CNAME文件内容的填写方法，只要把域名填写进去就可以了。注意不要带http://</p>
-<p><img src="upload/WechatIMG484.jpeg" alt=""></p>
+<p><img src="/upload/WechatIMG484.jpeg" alt=""></p>
 
       
     </div>
