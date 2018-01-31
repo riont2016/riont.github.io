@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijucan.cn/"/>
-  <updated>2018-01-31T14:06:42.692Z</updated>
+  <updated>2018-01-31T14:08:54.276Z</updated>
   <id>http://www.ijucan.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.ijucan.cn/2018/01/31/windows/"/>
     <id>http://www.ijucan.cn/2018/01/31/windows/</id>
     <published>2018-01-31T01:48:46.000Z</published>
-    <updated>2018-01-31T14:06:42.692Z</updated>
+    <updated>2018-01-31T14:08:54.276Z</updated>
     
-    <content type="html"><![CDATA[<p>1.ECS 内存<br>阿里云ECS服务器购买完成以后,默认是没有为系统配置虚拟内存的。确切的说是没有分配页面文件！<br>虚拟内存是windows可使用的内存的总称，包括了你安装在机器上面的实际物理内存，还加上了磁盘上面的分页文件(pagefile.sys文件)<br>当然物理内存是有限的，当现有的进程正在使用的内存超出可用的物理内存时，操作系统会将页（4KB片）的一个或多个虚拟地址空间移到计算机的硬盘。而后释放物理内存用于其他用途。<br>正常情况下，当看到页面交换文件使用率持续上升而且不下降的时候，这时候有可能是系统的物理内存资源耗尽或是资源紧张。但并不代表全部可能是这样的。这个必须注意。<br>应用程序可以通过Memory-Mapped files方法来直接操作页面交换文件。使用handle.exe工具可以了解到。<br>使用命令：Handle -a -l 查看对应的pid所用到的虚拟内存大小。</p><p>如果禁用掉页面文件呢？系统的性能会不会有什么影响？<br>阿里云的说法是说可以提高SSD的I/O性能。页面文件的存在会频繁的读写磁盘。<br><a id="more"></a><br>而微软相关的专家给出的说法是这样的。</p><blockquote><p>:Some feel having no paging file results in better performance, but in general, having a paging file means Windows can write pages on the modified list (which represent pages that aren’t being accessed actively but have not been saved to disk) out to the paging file, thus making that memory available for more useful purposes (processes or file cache). Technet - Pushing the Limits of Windows: Virtual Memory</p></blockquote><p>如果有一些进程并不是特别活跃，那么可以将它们放在磁盘上面，腾出更多的内存做其它的事情！<br>不过我在公司的云服务器上面如果不设置分页文件的话，则经常会报虚拟内存不足，因为服务器上面运行的程序有时候分配的内存已经超出实际的物理内存，特别是安装了sqlserver之类的数据库特别经常容易发生！如果你的内存足够大，硬盘又是SSD的，可以不用分配！</p>]]></content>
+    <content type="html"><![CDATA[<p>1.ECS 内存<br>阿里云ECS服务器购买完成以后,默认是没有为系统配置虚拟内存的。确切的说是没有分配页面文件！<br>虚拟内存是windows可使用的内存的总称，包括了你安装在机器上面的实际物理内存，还加上了磁盘上面的分页文件(pagefile.sys文件)<br>当然物理内存是有限的，当现有的进程正在使用的内存超出可用的物理内存时，操作系统会将页（4KB片）的一个或多个虚拟地址空间移到计算机的硬盘。而后释放物理内存用于其他用途。<br>正常情况下，当看到页面交换文件使用率持续上升而且不下降的时候，这时候有可能是系统的物理内存资源耗尽或是资源紧张。但并不代表全部可能是这样的。这个必须注意。<br>应用程序可以通过Memory-Mapped files方法来直接操作页面交换文件。使用handle.exe工具可以了解到。<br>使用命令：Handle -a -l 查看对应的pid所用到的虚拟内存大小。</p><p>如果禁用掉页面文件呢？系统的性能会不会有什么影响？<br>阿里云的说法是说可以提高SSD的I/O性能。页面文件的存在会频繁的读写磁盘。<br><a id="more"></a><br>而微软相关的专家给出的说法是这样的。</p><blockquote><p>Some feel having no paging file results in better performance, but in general, having a paging file means Windows can write pages on the modified list (which represent pages that aren’t being accessed actively but have not been saved to disk) out to the paging file, thus making that memory available for more useful purposes (processes or file cache). Technet - Pushing the Limits of Windows: Virtual Memory</p></blockquote><p>如果有一些进程并不是特别活跃，那么可以将它们放在磁盘上面，腾出更多的内存做其它的事情！<br>不过我在公司的云服务器上面如果不设置分页文件的话，则经常会报虚拟内存不足，因为服务器上面运行的程序有时候分配的内存已经超出实际的物理内存，特别是安装了sqlserver之类的数据库特别经常容易发生！如果你的内存足够大，硬盘又是SSD的，可以不用分配！</p>]]></content>
     
     <summary type="html">
     
